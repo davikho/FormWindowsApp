@@ -104,5 +104,12 @@ namespace primerform
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Persona1 p = new Persona1();
+            p.Show();
+
+        }
     }
 }

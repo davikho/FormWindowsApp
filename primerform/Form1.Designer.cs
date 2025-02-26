@@ -41,6 +41,7 @@
             this.chdiv = new System.Windows.Forms.CheckBox();
             this.chmodu = new System.Windows.Forms.CheckBox();
             this.result = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -78,7 +79,7 @@
             // 
             // btnCalcular
             // 
-            this.btnCalcular.Location = new System.Drawing.Point(338, 269);
+            this.btnCalcular.Location = new System.Drawing.Point(342, 261);
             this.btnCalcular.Name = "btnCalcular";
             this.btnCalcular.Size = new System.Drawing.Size(100, 23);
             this.btnCalcular.TabIndex = 4;
@@ -151,11 +152,21 @@
             this.result.AutoSize = true;
             this.result.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.result.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.result.Location = new System.Drawing.Point(324, 316);
+            this.result.Location = new System.Drawing.Point(324, 329);
             this.result.Name = "result";
             this.result.Size = new System.Drawing.Size(132, 25);
             this.result.TabIndex = 12;
             this.result.Text = "Resultados: ";
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(308, 303);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(172, 23);
+            this.button1.TabIndex = 13;
+            this.button1.Text = "Ir nueva pantalla";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Form1
             // 
@@ -163,6 +174,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Khaki;
             this.ClientSize = new System.Drawing.Size(800, 615);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.result);
             this.Controls.Add(this.chmodu);
             this.Controls.Add(this.chdiv);
@@ -199,6 +211,7 @@
         private System.Windows.Forms.CheckBox chdiv;
         private System.Windows.Forms.CheckBox chmodu;
         private System.Windows.Forms.Label result;
+        private System.Windows.Forms.Button button1;
     }
 }
 
